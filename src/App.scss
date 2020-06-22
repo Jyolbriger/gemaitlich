@@ -1,0 +1,236 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+/* Global Styles */
+:root {
+  --primary-color: #944013;
+  --dark-color: #470a03;
+  --info-color: #174fb7;
+  --light-color: #f9e8ce;
+  --danger-color: #c62317;
+  --success-color: #46a318;
+}
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+p {
+  margin: 1rem 0.1rem;
+}
+
+a:hover {
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  overflow: hidden;
+}
+
+/* Text Styles*/
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Center All */
+.all-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin: 1rem 2rem;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0 5% 0 5%;
+  width: 100%;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  display: block;
+}
+.navbar ul li a {
+  display: block;
+  text-align: center;
+  min-width: 8rem;
+  color: white;
+  font-size: larger;
+  padding: 1.4rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+}
+
+/* Sidebar */
+#sidebar {
+  display: inline-flex;
+  width: 20rem;
+  height: 30rem;
+  align-items: flex-start;
+  justify-content: left;
+  background-color: var(--mdarkblue-color);
+  color: white;
+  position: sticky;
+  left: 0;
+  border-radius: 0 0 5rem 0;
+  top: 0;
+}
+
+#sidebar ul li {
+  margin: 2.5rem 0 2rem 2.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  body {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    background-color: #fff;
+  }
+
+  div .banner {
+    font-size: 2rem !important;
+  }
+
+  .card:active .card-inner {
+    transform: rotateX(180deg);
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .each-slide {
+    height: 15rem;
+    object-fit: scale-down;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom */
+
+// Slideshow
+
+.slide-container {
+  width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 30rem;
+}
