@@ -1,16 +1,24 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./App.scss";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Navbar from "./components/navigation/Navbar";
+import Sidebar from "./components/navigation/Sidebar";
+import Imgslider from "./helpers/Imgslider";
+
+import Konzept from "./components/contents/Konzept";
 
 function App() {
   return (
-    <Router>
-      <div className='container center-all'>
-        <Switch>
-          <h1>Gemaitlichkeit</h1>
-        </Switch>
+    <Fragment>
+      <h1 id="pagetitle">Gemaitlich</h1>
+
+      <Navbar />
+      <Imgslider />
+      <Sidebar />
+      <div className="container">
+        <Konzept />
       </div>
-    </Router>
+    </Fragment>
   );
 }
 

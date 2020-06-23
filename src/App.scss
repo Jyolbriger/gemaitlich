@@ -12,19 +12,21 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: auto;
   padding: 0;
   font-family: "PT Sans", sans-serif;
+  color: var(--dark-color);
 }
 
 body {
   font-size: 1rem;
+  background-color: var(--light-color);
   line-height: 1.6;
-  background-color: #fff;
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 
 p {
@@ -38,15 +40,34 @@ ul {
   list-style: none;
 }
 
+#pagetitle {
+  display: block;
+  position: sticky;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  text-align: center;
+  font-weight: 5;
+  font-size: 8rem;
+  top: 0;
+  padding: 0.5rem;
+  opacity: 0.95;
+  z-index: -100;
+}
+
+h1,
+h2 {
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 4rem;
+}
+
 /* Utilities */
 .container {
-  display: flex;
-  flex-direction: column;
   min-height: 600px;
-  width: 100%;
-  margin: auto;
+  width: 96%;
+  margin: 0 2% 0 2%;
   top: 0;
   overflow: hidden;
+  background-color: var(--light-color);
 }
 
 /* Text Styles*/
@@ -63,8 +84,8 @@ ul {
 }
 
 .lead {
-  font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .text-center {
@@ -116,17 +137,16 @@ ul {
   justify-content: flex-start;
   align-items: center;
   padding: 0.1rem 0.5rem;
+  background-color: var(--dark-color);
   z-index: 1;
   width: 100%;
   opacity: 0.9;
-  margin: 1rem 2rem;
 }
 
 .navbar ul {
   display: flex;
-  margin: 0 5% 0 5%;
   width: 100%;
-  align-items: space-around;
+  align-items: space-evenly;
   justify-content: space-around;
 }
 
@@ -135,34 +155,42 @@ ul {
 }
 .navbar ul li a {
   display: block;
+  color: var(--light-color);
   text-align: center;
-  min-width: 8rem;
-  color: white;
   font-size: larger;
-  padding: 1.4rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+  padding: 0.4rem;
+}
+
+.header-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header-icons i {
+  margin: 0 5%;
+  color: var(--light-color) !important;
 }
 
 /* Sidebar */
 #sidebar {
-  display: inline-flex;
+  display: none;
+  flex-direction: column;
   width: 20rem;
   height: 30rem;
   align-items: flex-start;
-  justify-content: left;
-  background-color: var(--mdarkblue-color);
-  color: white;
+  justify-content: center;
+  background-color: var(--dark-color);
+  opacity: 0.9;
   position: sticky;
   left: 0;
-  border-radius: 0 0 5rem 0;
   top: 0;
 }
 
-#sidebar ul li {
+#sidebar a {
   margin: 2.5rem 0 2rem 2.5rem;
-  font-size: large;
-  font-weight: bold;
 }
 
 /* Mobile Styles */
@@ -170,7 +198,6 @@ ul {
   body {
     font-size: 0.8rem;
     line-height: 1.2;
-    background-color: #fff;
   }
 
   div .banner {
