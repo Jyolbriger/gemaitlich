@@ -5,20 +5,20 @@ const Navbar = () => {
     <div className="navbar">
       <ul>
         <li>
-          <a>Das sind wir</a>
+          <a href="#about">Das sind wir</a>
         </li>
         <li>
           <a href="#konzept">Konzept</a>
         </li>
         <li>
-          <a>Events & Termine</a>
+          <a href="#konzept">Events & Termine</a>
         </li>
         <li>
-          <a>Feedback & Kontakt</a>
+          <a href="#konzept">Feedback & Kontakt</a>
         </li>
         <li>
           <div className="header-icons">
-            <a>
+            <a href="https://www.instagram.com/gemaitlich/">
               <i className="fab fa-facebook"></i>
             </a>
             <a href="https://www.instagram.com/gemaitlich/">

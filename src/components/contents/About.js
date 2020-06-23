@@ -1,9 +1,9 @@
 import React from "react";
 
-const Konzept = () => {
+const About = () => {
   return (
-    <div id="konzept" className="all-center">
-      <h2 className="lead">Unser Gemaitliches Konzept</h2>
+    <div id="about" className="all-center">
+      <h2 className="lead">Das sind wir</h2>
       <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -19,4 +19,4 @@ const Konzept = () => {
   );
 };
 
-export default Konzept;
+export default About;

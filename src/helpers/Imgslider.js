@@ -14,7 +14,7 @@ const properties = {
   duration: 3500,
   transitionDuration: 1200,
   infinite: true,
-  indicators: true,
+  indicators: false,
   arrows: true,
   pauseOnHover: true,
   onChange: (oldIndex, newIndex) => {
