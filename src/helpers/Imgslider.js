@@ -2,12 +2,12 @@ import React from "react";
 import { Slide } from "react-slideshow-image";
 
 const slideImages = [
-  "/images/Anhang1.jpg",
-  "/images/Anhang2.jpg",
-  "/images/Anhang3.jpg",
-  "/images/Anhang4.jpg",
-  "/images/Anhang5.jpg",
-  "/images/Anhang6.jpg",
+  "/images/anhang1.jpg",
+  "/images/anhang2.jpg",
+  "/images/anhang3.jpg",
+  "/images/anhang4.jpg",
+  "/images/anhang5.jpg",
+  "/images/anhang6.jpg",
 ];
 
 const properties = {
@@ -27,22 +27,22 @@ const Carousel = () => {
     <div className="slide-container">
       <Slide {...properties}>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
+          <img src={slideImages[0]} alt="Testing" />
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
+          <img src={slideImages[1]} alt="Testing" />
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
+          <img src={slideImages[2]} alt="Testing" />
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[3]})` }}></div>
+          <img src={slideImages[3]} alt="Testing" />
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[4]})` }}></div>
+          <img src={slideImages[4]} alt="Testing" />
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[5]})` }}></div>
+          <img src={slideImages[5]} alt="Testing" />
         </div>
       </Slide>
     </div>

@@ -6,19 +6,16 @@ const Navbar = () => {
     <div className="navbar">
       <ul>
         <li>
-          <a href="#konzept">Konzept</a>
+          <Link to="/">Konzept</Link>
         </li>
         <li>
-          <a href="#about">Das sind wir</a>
+          <Link to="/">Das sind wir</Link>
         </li>
         <li>
-          <a href="#events">Events & Termine</a>
+          <Link to="/">Events & Termine</Link>
         </li>
         <li>
-          <a href="#contact">Feedback & Kontakt</a>
-        </li>
-        <li>
-          <Link to="/impressum">Impressum</Link>
+          <Link to="/">Feedback & Kontakt</Link>
         </li>
         <li>
           <div className="header-icons">
