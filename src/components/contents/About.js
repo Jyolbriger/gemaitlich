@@ -20,13 +20,13 @@ const About = () => {
         </p>
         <br />
         <p>
-          Maria Theresa - Maite - Gemaitlich - Gemütlich... Nur, um mal den
-          Uhrsprung dieses Wortes erläutert zu haben. Wie sie drauf gekommen
-          ist? Keine Ahnung!! Sie „erfindet“ andauernd solche Sachen und findet
-          sich dann ganz doll lustig... Maite hat man gern. Eigentlich kann man
-          sie gar nicht ungern haben. Nur, wenn man mit ihr streiten will, denn
-          das kann sie nämlich nicht. Aber sonst kann sie ziemlich viel. So
-          viel, dass sie sich oft gar nicht entscheiden kann, was sie denn jetzt
+          Maria Teresa - Maite - Gemaitlich - Gemütlich... Nur, um mal den
+          Ursprung dieses Wortes erläutert zu haben. Wie sie drauf gekommen ist?
+          Keine Ahnung!! Sie „erfindet“ andauernd solche Sachen und findet sich
+          dann ganz doll lustig... Maite hat man gern. Eigentlich kann man sie
+          gar nicht ungern haben. Nur, wenn man mit ihr streiten will, denn das
+          kann sie nämlich nicht. Aber sonst kann sie ziemlich viel. So viel,
+          dass sie sich oft gar nicht entscheiden kann, was sie denn jetzt
           gerade gut kann. Sie macht sich die Welt, wie sie ihr gefällt. Willst
           du wissen wollen, wie Maite ist? Dann sag ihr doch einfach mal
           „Hallo.“ Daran erkennst du sie: - viel zu große Klamotten - ein halber
@@ -37,7 +37,14 @@ const About = () => {
           war das? ..MAITE??“
         </p>
       </div>
-      <img src="/images/maiterafa.jpeg" alt="picture of maite & rafa" />
+      <img
+        src="/images/maiterafa.jpeg"
+        alt="picture of maite & rafa"
+        style={{
+          boxShadow:
+            "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+        }}
+      />
     </div>
   );
 };

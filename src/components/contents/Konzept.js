@@ -5,8 +5,8 @@ const Konzept = () => {
     <div id="konzept" className="all-center">
       <h2 className="lead">Unser Gemaitliches Konzept</h2>
       <p>
-        Wir sind Rafaela und Maite - das Gemaitlich. Wir möchten euch
-        kennenlernen, gemeinsam eine gute Zeit haben und eine Atmosphäre
+        Wir sind Schmaite, Rafunzel und Schlenii - das Gemaitlich. Wir möchten
+        euch kennenlernen, gemeinsam eine gute Zeit haben und eine Atmosphäre
         schaffen, in der wir zusammen genießen, zelebrieren, wohlfühlen, lachen,
         quatschen und schweigen können. Bei unserem ersten Projekt werden wir
         euch kleine, einfache Köstlichkeiten kredenzen und hoffen, dass wir

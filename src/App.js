@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./App.scss";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Navbar from "./components/navigation/Navbar";

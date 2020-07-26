@@ -1,13 +1,13 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 
-const slideImages = [
-  "/images/anhang1.jpg",
-  "/images/anhang2.jpg",
-  "/images/anhang3.jpg",
-  "/images/anhang4.jpg",
-  "/images/anhang5.jpg",
-  "/images/anhang6.jpg",
+let slideImages = [
+  "/images/anhang1",
+  "/images/anhang2",
+  "/images/anhang3",
+  "/images/anhang4",
+  "/images/anhang5",
+  "/images/anhang6",
 ];
 
 const properties = {
@@ -16,13 +16,25 @@ const properties = {
   infinite: true,
   indicators: false,
   arrows: true,
-  pauseOnHover: true,
+  pauseOnHover: false,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
   },
 };
 
+const ScreenWidth = window.screen.availWidth;
+
 const Carousel = () => {
+  if (ScreenWidth < 400) {
+    slideImages = slideImages.map((url) => {
+      return (url = url + "-mobile.jpg");
+    });
+  } else {
+    slideImages = slideImages.map((url) => {
+      return (url = url + ".jpg");
+    });
+  }
+
   return (
     <div className="slide-container">
       <Slide {...properties}>
@@ -40,9 +52,6 @@ const Carousel = () => {
         </div>
         <div className="each-slide">
           <img src={slideImages[4]} alt="Testing" />
-        </div>
-        <div className="each-slide">
-          <img src={slideImages[5]} alt="Testing" />
         </div>
       </Slide>
     </div>
