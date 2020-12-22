@@ -2,15 +2,15 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id="about" className="all-center">
+    <div id='about' className='all-center'>
       <div>
-        <h2 className="lead">Das sind wir</h2>
+        <h2 className='lead'>Das sind wir</h2>
         <p>
           Eine Ode ans Rafunzel - Was du kannst (eine ganze Menge, deswegen hier
           nur eine Auswahl): Lachen, kochen, inspirieren, nerven, du sein,
           philosophieren, laut reden, ehrlich sein, gammeln, zelebrieren,
           kochen, einrichten, spontan sein, helfen, feiern, still sein, kämpfen,
-          querdenken, dich einlassen, kraulen, geben, fantasieren, zu spät
+          queerdenken, dich einlassen, kraulen, geben, fantasieren, zu spät
           kommen, andere ernst nehmen, dich selbst nicht so ernst nehmen Was du
           bist: Könnte ich niemals auf etwas kurzes runterbrechen. Eine
           unfassbar große Person (also jetzt nicht vom Körper), mit einem Kopf
@@ -38,8 +38,8 @@ const About = () => {
         </p>
       </div>
       <img
-        src="/images/maiterafa.jpeg"
-        alt="picture of maite & rafa"
+        src='/images/maiterafa.jpeg'
+        alt='picture of maite & rafa'
         style={{
           boxShadow:
             "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
